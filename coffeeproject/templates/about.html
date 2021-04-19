@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+About    
+{% endblock title %}
+ {% block about %}active    {% endblock about %}
+{% block body %}{% load static %}
+
+
+<br>
+<h1>About Us</h1>
+<link rel="stylesheet" href="{% static 'css/style2.css' %}" type="text/css">
+
+
+<div class="container1"> <img src="{% static '/images/cshop.jpg' %}"></div>
+<div class="container">
+   <p>
+<b>RND COFFEE DAY</b>,a part of RND GROUPS PVT LTD,is India's favourite hangout for coffee
+and conversations.We opened our first shop in 2021 at MG ROAD in Bengaluru.We strive to provide best experience
+to our guests.Our coffees are sourced from thousands of small coffee planters,who made us who we are today,and we are glad to be a part of their lives.
+</p></div>
+
+<div class="myfooter">
+    <div class="wrapper">
+    <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><img src="{% static '/images/face.jpg' %}"></span>
+  
+    </div><div class="icon instagram">
+        <div class="tooltip">instagram</div>
+        <span><img src="{% static '/images/insta.jpg' %}"></span></div>
+     <div class="icon twitter">
+         <div class="tooltip">twitter</div>
+         <span><img src="{% static '/images/twitter.jpg' %}"></span></div>
+      <div class="icon youtube">
+             <div class="tooltip">youtube</div>
+             <span><img src="{% static '/images/youtube.jpg' %}"></span></div>
+  
+  
+  </div>
+  
+  
+  <p>&copy RND COFFEE DAY.ALL RIGHTS RESERVED</p>
+  </div>
+
+
+{% endblock body %}

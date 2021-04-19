@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block title %}
+Order
+{% endblock title %}
+{% block port %} active   {% endblock port %}
+{% block body %}{% load static %}
+
+<br>
+<h1>PLACE YOUR ORDER</h1><link rel="stylesheet" href="{% static 'css/style4.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+
+
+    <section>
+        <div class="section-title">
+            <h2 class="header">A Lot Can Happen Over Coffee<button class="favourites"><i class='fa fa-coffee fa-lg'></i></button></h2>
+        </div>
+            
+        
+    </section>
+    
+
+    
+
+
+<div class="container">
+    
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/cafe americano.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>Cafe americano</h2>
+    <p>&#x20B9 150.</p>
+    </div></a></div>
+    
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/cafe latte.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>Cafe latte</h2>
+    <p>&#x20B9 190.  </p>
+    </div></a></div>
+    
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/cafe mocha.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>cafe mocha</h2>
+    <p>&#x20B9 300</p>
+    </div></a></div>
+    
+  <div id="sample">
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/capuccino.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>Capuccino</h2>
+    <p>&#x20B9 200.</p>
+    </div></a></div>
+    
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/espresso.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>Espresso</h2>
+    <p>&#x20B9 150.</p>
+    </div></a></div>
+    
+    <div class="items">
+    <a href="#">
+    <img src="{% static '/images/macchiato.jpg' %}" class="thumbnail">
+    <div class="caption">
+    <h2>macchiato</h2>
+    <p>&#x20B9 350.</p>
+    </div></a></div><div class="items">
+        <a href="#">
+        <img src="{% static '/images/ristretto.jpg' %}" class="thumbnail">
+        <div class="caption">
+        <h2>ristretto</h2>
+        <p>&#x20B9 300.</p>
+        </div></a></div></div>
+   
+   <div class="container2">
+        <div id="cont1">
+            <a href="/orderplaced"><button class="button1">order</button></a>
+        </div>  </div>  
+
+
+<div class="myfooter">
+    <div class="wrapper">
+    <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><img src="{% static '/images/face.jpg' %}"></span>
+  
+    </div><div class="icon instagram">
+        <div class="tooltip">instagram</div>
+        <span><img src="{% static '/images/insta.jpg' %}"></span></div>
+     <div class="icon twitter">
+         <div class="tooltip">twitter</div>
+         <span><img src="{% static '/images/twitter.jpg' %}"></span></div>
+      <div class="icon youtube">
+             <div class="tooltip">youtube</div>
+             <span><img src="{% static '/images/youtube.jpg' %}"></span></div>
+  
+  
+  </div>
+  
+  
+  <p>&copy RND COFFEE DAY.ALL RIGHTS RESERVED</p>
+  </div>{% endblock body %}

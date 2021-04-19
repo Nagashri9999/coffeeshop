@@ -1,0 +1,111 @@
+  
+.container1{
+    width:1200px;
+    height:450px;
+  
+}
+picture{
+    padding-left:35px;
+}
+.img-fluid ,.img-thumbnail{
+    width:200px;
+    height:300px;
+    padding-left: 25px;
+
+
+}
+.thumbnail{
+  margin-left: 10px;
+  padding-left: 2px;
+}
+.thumbnail:hover{
+  position: relative;
+  
+  left:-35px;
+  width:300px;
+  height:auto;
+  display: block;
+  float:left;
+  padding-top:10px;
+  
+} 
+.thumbnail,img{
+  width:200px;
+}
+
+img:hover{
+  width:400px;
+}
+.myfooter{
+  padding:0px;
+  margin-top:0px;
+  background-color:coral;
+  height:150px;
+}
+p{
+  color: black;
+  text-align: center;
+}
+.wrapper{
+  display: inline-flex;
+      padding-left: 100px;
+      margin-left: 200px;
+      background:crimson;
+      width:600px;
+      border-radius:20%;
+  
+  }
+  .wrapper .icon{
+      margin:0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      
+  }
+  .wrapper .icon span{
+      height:60px;
+      width:60px;
+      display:block;
+      
+  }
+  
+  .wrapper span img{
+      width:40px;
+      height:40px;
+      float: left;
+      border-radius: 18px;
+      margin-top: 2px;
+      padding-top:2px;
+  
+  }
+   .tooltip{
+      background:yellowgreen;
+      
+      font-size: 18px;
+    padding-top:2px;
+      box-shadow: salmon;
+      opacity:0;
+      border: 1px slateblue;
+      font-weight: bold;
+      
+  }
+  .wrapper .icon:hover .tooltip{
+      opacity:0.9;
+      pointer-events: auto;
+      color: red;
+  }
+  .wrapper .icon .tooltip:before{
+      position: absolute;
+      content:"";
+    
+      
+      background:rgb(65, 57, 73);
+      bottom:-8px;
+      left:50%;
+      transform:translateX(-50%) rotate(45deg);
+  
+  }
+
+

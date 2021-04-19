@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+GALLERY
+{% endblock title %}
+{% block port %} active   {% endblock port %}
+{% block body %}{% load static %}
+
+<br>
+<h1>GALLERY</h1><link rel="stylesheet" href="{% static 'css/style3.css' %}" type="text/css">
+<head></head>
+
+<h1>WELCOME TO RND COFFEE DAY</h1>
+<body>
+<div class="grid-container">
+    <div class="grid-item"><img src="{% static '/images/ci.jpg' %}" id="first">
+    </div><div class="grid-item"><img src="{% static '/images/ci1.jpg' %}" id="second"></div>
+    <div class="grid-item"><img src="{% static '/images/ci2.jpg' %}" id="third"></div>
+    <div class="grid-item"><img src="{% static '/images/ci3.jpg' %}" id="four"></div>
+
+<div class="grid-item"><img src="{% static '/images/cshop.jpg' %}" id="five"></div>
+<div class="grid-item"><img src="{% static '/images/ci5.jpg' %}" id="six"></div>
+<div class="grid-item"><img src="{% static '/images/ci4.jpg' %}" id="seven"></div>
+<div class="grid-item"><img src="{% static '/images/ci7.jpg' %}" id="eight"></div>
+<div class="grid-item"><img src="{% static '/images/ci6.jpg' %}" id ="nine"></div>
+
+</div><div class="myfooter">
+    <div class="wrapper">
+    <div class="icon facebook">
+        <div class="tooltip">Facebook</div>
+        <span><img src="{% static '/images/face.jpg' %}"></span>
+  
+    </div><div class="icon instagram">
+        <div class="tooltip">instagram</div>
+        <span><img src="{% static '/images/insta.jpg' %}"></span></div>
+     <div class="icon twitter">
+         <div class="tooltip">twitter</div>
+         <span><img src="{% static '/images/twitter.jpg' %}"></span></div>
+      <div class="icon youtube">
+             <div class="tooltip">youtube</div>
+             <span><img src="{% static '/images/youtube.jpg' %}"></span></div>
+  
+  
+  </div>
+  
+  
+  <p>&copy RND COFFEE DAY.ALL RIGHTS RESERVED</p>
+  </div>
+
+
+
+
+
+{% endblock body %}

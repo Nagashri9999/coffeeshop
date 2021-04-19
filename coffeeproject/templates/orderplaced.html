@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block title %}
+Orderplace
+{% endblock title %}
+{% block port %} active   {% endblock port %}
+{% block body %}{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'css/style5.css' %}" type="text/css">
+<script type="text/javascript"> 
+    function first(drink, shots, customer) { 
+        var x = customer.value; 
+        if (x == '' || x == 'null') { 
+            alert("enter a name."); 
+        }
+        else { 
+            if (drink == "0") { 
+                price = 3; 
+            } else if (drink == "1") { 
+                price = 2; 
+            } else if (drink == "2") { 
+                price = 2.50; 
+            } else { 
+                price = 1.50; 
+            } 
+            if(shots > 0) { 
+                Price= price + (shots * 0.5) 
+            } else { 
+                alert ("Thank you for your order"); 
+            } 
+        }
+    }
+    </script>
+    
+   <div class="container"> <form method="post" action=" ">{% csrf_token %}
+    <h1>Fill the details.</h1>
+    <p>What would you like to order?</p>
+    <div class="form-inline"><p> <label>Select item</label></p>
+    <select id="drink" required="required">
+    
+        <option value="0" id="0">Latte</option>
+        <option value="1" id="1">Americano</option>
+        <option value="2" id="2">Cappuccino</option>
+        <option value="3" id="3">Drip Coffee</option>
+    
+    </select></div>
+    
+    <br>
+    <br>
+    <div class="form-inline"> <p> <label>Select quantity</label></p>
+    <select id="shots" required="required">
+    
+        <option value="0" id="0">No Extra</option>
+        <option value="1" id="1">1</option>
+        <option value="2" id="2">2</option>
+        <option value="3" id="3">3</option>
+        <option value="4" id="4">4</option>
+    
+    </select></div>
+    
+    <br>
+    <br>
+    
+    <div class="form-inline"> <p>Enter your name:</p>
+    
+    <input id="customer" value="customer" type="text" required="required"></div>
+    
+    <br>
+    
+     <br>
+     <div class="form-inline">
+        <button onclick="first(drink, shots, customer)">Complete Order</button>
+     </div>
+        </form></div>
+        
+        
+    
+    
+    
+        </script>
+        
+
+        <div class="myfooter">
+            <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><img src="{% static '/images/face.jpg' %}"></span>
+          
+            </div><div class="icon instagram">
+                <div class="tooltip">instagram</div>
+                <span><img src="{% static '/images/insta.jpg' %}"></span></div>
+             <div class="icon twitter">
+                 <div class="tooltip">twitter</div>
+                 <span><img src="{% static '/images/twitter.jpg' %}"></span></div>
+              <div class="icon youtube">
+                     <div class="tooltip">youtube</div>
+                     <span><img src="{% static '/images/youtube.jpg' %}"></span></div>
+          
+          
+          </div>
+          
+          
+          <p>&copy RND COFFEE DAY.ALL RIGHTS RESERVED</p>
+          </div>
+        
+        
+        
+        
+    
+    {% endblock body %}
